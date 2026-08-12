@@ -41,8 +41,8 @@ button {
 
 :root {
   --bg-primary: #080808;
-  --bg-secondary: #111111;
-  --bg-card: #171717;
+  --bg-secondary: #171717;
+  --bg-card: #111111;
 
   --text-primary: #f5f5f5;
   --text-secondary: #a7a7a7;
@@ -65,6 +65,9 @@ button {
 #home {
   min-height: 100vh;
   position: relative;
+  background: #111111;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ---------- Navigation ---------- */
@@ -151,7 +154,18 @@ nav {
 .nav-links li a:hover::after {
   width: 100%;
 }
+.menu-toggle {
+  display: none;
 
+  background: none;
+  border: none;
+
+  color: var(--text-primary);
+
+  font-size: 30px;
+
+  cursor: pointer;
+}
 /* ---------- Hero ---------- */
 
 .hero {
@@ -159,11 +173,17 @@ nav {
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-text {
-  max-width: 760px;
-  padding-top: 60px;
+  width: 100%;
+  max-width: 900px;
+  padding: 90px 85px;
+  background: #080808;
+  border: 1px solid #292929;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 }
 
 .greeting {
@@ -176,7 +196,8 @@ nav {
 }
 
 .header-text h2 {
-  margin-bottom: 25px;
+  max-width: 750px;
+  margin-bottom: 28px;
 
   color: var(--text-primary);
 
@@ -189,7 +210,7 @@ nav {
 .hero-description {
   max-width: 650px;
 
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 
   color: var(--text-secondary);
 
@@ -757,8 +778,12 @@ button:focus-visible {
   }
 
   .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
     padding-top: 15px;
     padding-bottom: 15px;
@@ -766,7 +791,7 @@ button:focus-visible {
 
   .logo {
     font-size: 24px;
-    margin-bottom: 12px;
+    margin: 0;
   }
 
   .nav-links {
@@ -781,15 +806,82 @@ button:focus-visible {
   .nav-links li a {
     font-size: 14px;
   }
+  /* ---------- Hamburger button ---------- */
+
+  .menu-toggle {
+    display: block;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+  }
+
+  .menu-toggle i {
+    font-size: 30px;
+  }
+
+  /* ---------- Hidden navigation ---------- */
+
+  .nav-links {
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 0;
+
+    padding: 15px 6% 20px;
+
+    background: #080808;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ---------- Open navigation ---------- */
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+
+    padding: 12px 0;
+
+    font-size: 15px;
+  }
 
   /* ---------- Hero ---------- */
+  #home {
+    min-height: 100vh;
+  }
 
   .hero {
     min-height: 90vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   .header-text {
-    padding-top: 100px;
+    padding: 40px 25px;
+    border-radius: 12px;
   }
 
   .greeting {
