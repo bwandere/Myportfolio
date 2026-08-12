@@ -418,45 +418,186 @@ section {
   border-color: var(--accent);
 }
 
-/*-------------------services----------------------*/
-#services {
-  padding: 30px 0;
+7.
+  WHAT
+  I
+  BUILD
+  =========================================================
+  */
+  #what-i-build {
+  background: var(--bg-secondary);
 }
-.services-list {
+
+.build-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+
   margin-top: 50px;
 }
-.services-list div {
-  background: #262626;
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
+
+.build-card {
+  padding: 35px;
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
   transition:
-    0.5s,
-    transform 0.5s;
+    transform var(--transition),
+    border-color var(--transition);
 }
-.services-list div i {
-  font-size: 50px;
-  margin-bottom: 30px;
+
+.build-card:hover {
+  transform: translateY(-6px);
+
+  border-color: var(--accent);
 }
-.services-list div h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.services-list div a {
-  text-decoration: none;
-  color: #fff;
-  margin-top: 20px;
-  font-size: 12px;
+
+.build-card i {
   display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: var(--accent);
+
+  font-size: 42px;
 }
-.services-list div:hover {
-  background: whitesmoke;
-  transform: translateY(-10px);
+
+.build-card h3 {
+  margin-bottom: 12px;
+
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.build-card p {
+  color: var(--text-secondary);
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   8. FEATURED PROJECTS
+   ========================================================= */
+
+.featured-projects {
+  margin-top: 90px;
+}
+
+.subsection-title {
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.project-card {
+  position: relative;
+
+  margin-bottom: 25px;
+
+  padding: 35px;
+
+  background: var(--bg-primary);
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  transition:
+    transform var(--transition),
+    border-color var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.project-content {
+  max-width: 760px;
+}
+
+.project-status {
+  margin-bottom: 8px;
+
+  color: var(--accent);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-card h3 {
+  margin-bottom: 12px;
+
+  font-size: 28px;
+}
+
+.project-card p {
+  margin-bottom: 20px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.7;
+}
+
+/* ---------- Project technologies ---------- */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 25px;
+}
+
+.project-tech span {
+  padding: 5px 10px;
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+  border-radius: 4px;
+
+  color: var(--text-secondary);
+
+  font-size: 12px;
+}
+
+/* ---------- Project links ---------- */
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: var(--text-primary);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: color var(--transition);
+}
+
+.project-link i {
+  font-size: 18px;
+
+  transition: transform var(--transition);
+}
+
+.project-link:hover {
+  color: var(--accent);
+}
+
+.project-link:hover i {
+  transform: translateX(4px);
 }
 /*----------------Contact-------------*/
 .contact-left {
