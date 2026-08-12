@@ -1,224 +1,272 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rosebella Wandere | Full-Stack Developer</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-        <!-- ==================== HEADER / HERO ==================== --> 
-         <header id="home"> 
-            <nav> <div class="container nav-container"> 
-                <h1 class="logo"> <span>R</span>osebella <span>W</span>andere </h1>
-                 <ul class="nav-links"> 
-                    <li><a href="#home">Home</a></li>
-                     <li><a href="#about">About</a></li>
-                      <li><a href="#what-i-build">What I Build</a></li> 
-                      <li><a href="#contact">Contact</a></li> 
-                    </ul> 
-                </div>
-             </nav> 
-             <div class="container hero"> 
-                <div class="header-text"> 
-                    <p class="greeting">Hi, I'm Bella Wandere.</p>
-                     <h2>Backend &amp; Full-Stack Developer</h2> 
-                     <p class="hero-description"> I enjoy turning ideas and real-world problems into practical software while continuously growing my skills in backend and full-stack development. </p> 
-                     <div class="hero-buttons">
-                         <a href="#what-i-build" class="btn"> Explore My Work </a> 
-                         <a href="#" class="btn btn-outline"> GitHub </a>
-                          <a href="./Images/C.V.pdf" download class="btn btn-outline"> Download CV </a> 
-                        </div> 
-                    </div> 
-                </div>
-             </header>
-       <main>
-         <!-- ==================== ABOUT ==================== --> 
-          <section id="about">
-             <div class="container">
-                 <div class="about-content"> 
-                    <div class="about-image"> 
-                        <img src="./Images/1715713484218.jpg" alt="Rosebella Wandere">
-                     </div> 
-                     <div class="about-text"> 
-                        <h2 class="section-title">About Me</h2> 
-                        <p> I'm Rosebella Wandere, a software developer in training with an interest in building useful, reliable and practical applications. </p> 
-                        <p> I enjoy learning through hands-on projects, solving problems with technology and collaborating with other developers. My current focus is backend and full-stack development, while I continue exploring AI and Machine Learning. </p>
-                         <!-- Technical Snapshot --> 
-                          <div class="technical-tabs"> 
-                            <div class="tab-titles">
-                                 <button class="tab-links active-link" onclick="openTab(event, 'languages')"> Languages </button> 
-                                 <button class="tab-links" onclick="openTab(event, 'frameworks')"> Frameworks </button>
-                                  <button class="tab-links" onclick="openTab(event, 'tools')"> Tools </button> 
-                                </div> 
-                                <!-- Languages -->
-                                  <div class="tab-contents active-tab" id="languages"> 
-                                    <ul>
-                                         <li>Go</li>
-                                          <li>JavaScript</li> 
-                                          <li>SQL</li> 
-                                          <li>HTML</li>
-                                           <li>CSS</li> 
-                                        </ul> 
-                                    </div> 
-                                    <!-- Frameworks --> 
-                                     <div class="tab-contents" id="frameworks">
-                                         <ul>
-                                             <li>Node.js</li> 
-                                             <li>Express</li>
-                                              <li>REST API Development</li>
-                                               <li>Go net/http</li> 
-                                            </ul> 
-                                        </div>
-                                         <!-- Tools -->
-                                           <div class="tab-contents" id="tools">
-                                             <ul> 
-                                                <li>Git &amp; GitHub</li>
-                                                 <li>Linux</li> 
-                                                 <li>VS Code</li>
-                                                  <li>npm</li> 
-                                                  <li>MySQL</li>
-                                                 </ul>
-                                                 </div> 
-                                                </div> 
-                                            </div>
-                                         </div>
-                                         </div> 
-                                        </section>
-            <!-- ==================== WHAT I BUILD ==================== --> 
-             <section id="what-i-build">
-                 <div class="container"> 
-                    <h2 class="section-title">What I Build</h2> 
-                    <p class="section-intro"> I enjoy building software that connects technology with practical problems and useful experiences. </p> 
-                    <!-- Areas of Development --> 
-                     <div class="build-list">
-                         <article class="build-card">
-                             <i class="bx bx-code-alt"></i> 
-                             <h3>Web Applications</h3>
-                              <p> Responsive and interactive applications designed to turn ideas and real-world problems into useful digital experiences. </p>
-                             </article> 
-                             <article class="build-card">
-                                 <i class="bx bx-server"></i>
-                                  <h3>Backend Systems</h3>
-                                   <p> Server-side applications, APIs, application logic and data-driven systems using backend technologies. </p>
-                                 </article>
-                                  <article class="build-card">
-                                     <i class="bx bx-bulb"></i>
-                                      <h3>Problem-Solving Projects</h3>
-                                       <p> Technology projects that explore practical solutions to problems in areas I'm interested in. </p>
-                                     </article>
-                                     </div>
-                                      <!-- Featured Projects -->
-                                        <div class="featured-projects"> 
-                                            <h3 class="subsection-title">Featured Work</h3>
-                                             <!-- TrustWera -->
-                                               <article class="project-card"> 
-                                                <div class="project-content"> 
-                                                    <p class="project-status"> Current Project </p>
-                                                     <h3>TrustWera</h3>
-                                                      <p> A verified marketplace concept designed to connect customers with trusted local workers through profiles, ratings, booking and job management. </p> 
-                                                      <div class="project-tech">
-                                                         <span>Go</span>
-                                                          <span>JavaScript</span>
-                                                           <span>Git</span>
-                                                         </div>
-                                                          <a href="#" class="project-link"> View Project <i class="bx bx-right-arrow-alt"></i> </a> 
-                                                        </div>
-                                                     </article>
-                                                      <!-- HerCycle --> 
-                                                       <article class="project-card">
-                                                         <div class="project-content">
-                                                             <h3>HerCycle</h3> 
-                                                             <p> A web-based project focused on providing useful digital information and features through a structured full-stack application. </p>
-                                                              <div class="project-tech"> 
-                                                                <span>JavaScript</span> 
-                                                                <span>Node.js</span>
-                                                                 <span>MySQL</span> 
-                                                                </div> 
-                                                                <a href="#" class="project-link"> View Project <i class="bx bx-right-arrow-alt"></i> </a>
-                                                             </div>
-                                                             </article>
-                                                             </div>
-                                                             </div>
-             </section>
-            <!---------------Contact------------------->
-            <div id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="contact-left">
-                            <h1 class="sub-title">Contact Me</h1>
-            
-                            <!-- Email opens Gmail -->
-                            <p><i class='bx bx-send'></i> 
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rosebellawandere@gmail.com" target="_blank" style="color: #fff; text-decoration: none;">
-                                    rosebellawandere@gmail.com
-                                </a>
-                            </p>
-            
-                            <p><i class='bx bx-phone'></i> 0720069238</p>
-            
-                            <!--<div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                                <a href="https://whatsapp.com/."><i class='bx bxl-whatsapp'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                            </div>
-                        -->
-                            <br/><br/>
-                            <a href="./Images/C.V.pdf" download class="btn">Download CV</a>
-                            <!-- Update "path/to/your-cv.pdf" with the actual path to your CV file -->
-                        </div>
-            
-                        <div class="contact-right">
-                            <form id="contact-form">
-                                <input type="text" name="Name" placeholder="Your Name" required>
-                                <input type="email" name="Email" placeholder="Your Email" required>
-                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                                <button type="submit">Submit</button>
-                                <p id="form-message" style="display:none; color: whitesmoke; margin-top: 10px;">Message Sent!</p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ==================== HEADER / HERO ==================== -->
+    <header id="home">
+      <nav>
+        <div class="container nav-container">
+          <h1 class="logo"><span>R</span>osebella <span>W</span>andere</h1>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#what-i-build">What I Build</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container hero">
+        <div class="header-text">
+          <p class="greeting">Hi, I'm Bella Wandere.</p>
+          <h2>Backend &amp; Full-Stack Developer</h2>
+          <p class="hero-description">
+            I enjoy turning ideas and real-world problems into practical
+            software while continuously growing my skills in backend and
+            full-stack development.
+          </p>
+          <div class="hero-buttons">
+            <a href="#what-i-build" class="btn"> Explore My Work </a>
+            <a href="#" class="btn btn-outline"> GitHub </a>
+            <a href="./Images/C.V.pdf" download class="btn btn-outline">
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ==================== ABOUT ==================== -->
+      <section id="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-image">
+              <img src="./Images/1715713484218.jpg" alt="Rosebella Wandere" />
             </div>
-            
-            <!-- Add this script to handle form submission -->
-            <script>
-                document.getElementById("contact-form").addEventListener("submit", function(event){
-                    event.preventDefault(); // Prevent real form submission for now
-                
-                    // Show the success message
-                    const message = document.getElementById("form-message");
-                    message.style.display = "block";
-                
-                    // Clear the form fields (optional, looks nice)
-                    this.reset();
-                
-                    // Hide the message after 3 seconds
-                    setTimeout(function(){
-                        message.style.display = "none";
-                    }, 3000); // 3000 milliseconds = 3 seconds
-                });
-                </script>
+            <div class="about-text">
+              <h2 class="section-title">About Me</h2>
+              <p>
+                I'm Rosebella Wandere, a software developer in training with an
+                interest in building useful, reliable and practical
+                applications.
+              </p>
+              <p>
+                I enjoy learning through hands-on projects, solving problems
+                with technology and collaborating with other developers. My
+                current focus is backend and full-stack development, while I
+                continue exploring AI and Machine Learning.
+              </p>
+              <!-- Technical Snapshot -->
+              <div class="technical-tabs">
+                <div class="tab-titles">
+                  <button
+                    class="tab-links active-link"
+                    onclick="openTab(event, 'languages')"
+                  >
+                    Languages
+                  </button>
+                  <button
+                    class="tab-links"
+                    onclick="openTab(event, 'frameworks')"
+                  >
+                    Frameworks
+                  </button>
+                  <button class="tab-links" onclick="openTab(event, 'tools')">
+                    Tools
+                  </button>
                 </div>
+                <!-- Languages -->
+                <div class="tab-contents active-tab" id="languages">
+                  <ul>
+                    <li>Go</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+                <!-- Frameworks -->
+                <div class="tab-contents" id="frameworks">
+                  <ul>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>REST API Development</li>
+                    <li>Go net/http</li>
+                  </ul>
+                </div>
+                <!-- Tools -->
+                <div class="tab-contents" id="tools">
+                  <ul>
+                    <li>Git &amp; GitHub</li>
+                    <li>Linux</li>
+                    <li>VS Code</li>
+                    <li>npm</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <script>
-                var tablinks = document.getElementsByClassName("tab-links");
-                var tabcontents = document.getElementsByClassName("tab-contents");
+          </div>
+        </div>
+      </section>
+      <!-- ==================== WHAT I BUILD ==================== -->
+      <section id="what-i-build">
+        <div class="container">
+          <h2 class="section-title">What I Build</h2>
+          <p class="section-intro">
+            I enjoy building software that connects technology with practical
+            problems and useful experiences.
+          </p>
+          <!-- Areas of Development -->
+          <div class="build-list">
+            <article class="build-card">
+              <i class="bx bx-code-alt"></i>
+              <h3>Web Applications</h3>
+              <p>
+                Responsive and interactive applications designed to turn ideas
+                and real-world problems into useful digital experiences.
+              </p>
+            </article>
+            <article class="build-card">
+              <i class="bx bx-server"></i>
+              <h3>Backend Systems</h3>
+              <p>
+                Server-side applications, APIs, application logic and
+                data-driven systems using backend technologies.
+              </p>
+            </article>
+            <article class="build-card">
+              <i class="bx bx-bulb"></i>
+              <h3>Problem-Solving Projects</h3>
+              <p>
+                Technology projects that explore practical solutions to problems
+                in areas I'm interested in.
+              </p>
+            </article>
+          </div>
+          <!-- Featured Projects -->
+          <div class="featured-projects">
+            <h3 class="subsection-title">Featured Work</h3>
+            <!-- TrustWera -->
+            <article class="project-card">
+              <div class="project-content">
+                <p class="project-status">Current Project</p>
+                <h3>TrustWera</h3>
+                <p>
+                  A verified marketplace concept designed to connect customers
+                  with trusted local workers through profiles, ratings, booking
+                  and job management.
+                </p>
+                <div class="project-tech">
+                  <span>Go</span>
+                  <span>JavaScript</span>
+                  <span>Git</span>
+                </div>
+                <a href="#" class="project-link">
+                  View Project <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </article>
+            <!-- HerCycle -->
+            <article class="project-card">
+              <div class="project-content">
+                <h3>HerCycle</h3>
+                <p>
+                  A web-based project focused on providing useful digital
+                  information and features through a structured full-stack
+                  application.
+                </p>
+                <div class="project-tech">
+                  <span>JavaScript</span>
+                  <span>Node.js</span>
+                  <span>MySQL</span>
+                </div>
+                <a href="#" class="project-link">
+                  View Project <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!---------------Contact------------------->
+      <section id="contact">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-text">
+              <h2 class="section-title">Let's Connect</h2>
+              <p>
+                Have an opportunity, want to collaborate, or simply want to talk
+                tech? I'd love to hear from you.
+              </p>
+              <a href="mailto:rosebellawandere@gmail.com" class="contact-item">
+                <i class="bx bx-envelope"></i>
+                <span> rosebellawandere@gmail.com </span>
+              </a>
+              <a href="#" class="contact-item">
+                <i class="bx bxl-whatsapp"></i> <span> WhatsApp </span>
+              </a>
+              <div class="social-icons">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Dev.to"
+                >
+                  <i class="bx bxl-dev-to"></i>
+                </a>
+              </div>
+              <a href="./Images/C.V.pdf" download class="btn"> Download CV </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-                function opentab(tabname){
-                    for(tablink of tablinks){
-                        tablink.classList.remove("active-link");
-                    }
-                    for(tabcontent of tabcontents){
-                        tabcontent.classList.remove("active-tab");
-                    }
-                    event.currentTarget.classList.add("active-link");
-                    document.getElementById(tabname).classList.add("active-tab");
-                }
-
-
-            </script>
-            </main>
-        </body>
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Rosebella Wandere. Built with curiosity and code.</p>
+      </div>
+    </footer>
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+      const tabLinks = document.getElementsByClassName("tab-links");
+      const tabContents = document.getElementsByClassName("tab-contents");
+      function openTab(event, tabName) {
+        for (const tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (const tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+  </body>
 </html>
