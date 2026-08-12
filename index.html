@@ -33,45 +33,58 @@
                     </div> 
                 </div>
              </header>
-        <!-------About--------->
-        <div id="about">
-            <div class="work">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="./Images/1715713484218.jpg">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="about-title">About Me</h1>
-                        <p>Hello, I am Rosebella Wandere from Eldoret,Kenya.<br>A website developer taking a Bachelor course in ICTM at Maseno University <br> 
-                            I also offer networking services <br> that I learned and earned a certificate at Cisco Academy.
-                        </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick ="opentab('skills')">Skills</p> 
-                            <p class="tab-links" onclick ="opentab('expeience')">Experience</p>
-                            <p class="tab-links" onclick ="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>website</span> <br>Development</li>
-                                <li><span>Software</span><br>Development</li>
-                                <li><span>Computer</span><br> Networking</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="expeience">
-                            <ul>
-                                <li><span>2024-current</span> <br> ICT student at Maseno University</li>
-                                <li><span>2022-2023</span><br>Cisco Certificate in Networking</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2024</span> <br>ICT student at Maseno University</li>
-                                <li><span>2022-2023</span><br>Networking at Cisco Academy</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+       <main>
+         <!-- ==================== ABOUT ==================== --> <section id="about">
+             <div class="container">
+                 <div class="about-content"> 
+                    <div class="about-image"> 
+                        <img src="./Images/1715713484218.jpg" alt="Rosebella Wandere">
+                     </div> 
+                     <div class="about-text"> 
+                        <h2 class="section-title">About Me</h2> 
+                        <p> I'm Rosebella Wandere, a software developer in training with an interest in building useful, reliable and practical applications. </p> 
+                        <p> I enjoy learning through hands-on projects, solving problems with technology and collaborating with other developers. My current focus is backend and full-stack development, while I continue exploring AI and Machine Learning. </p>
+                         <!-- Technical Snapshot --> 
+                          <div class="technical-tabs"> 
+                            <div class="tab-titles">
+                                 <button class="tab-links active-link" onclick="openTab(event, 'languages')"> Languages </button> 
+                                 <button class="tab-links" onclick="openTab(event, 'frameworks')"> Frameworks </button>
+                                  <button class="tab-links" onclick="openTab(event, 'tools')"> Tools </button> 
+                                </div> 
+                                <!-- Languages -->
+                                  <div class="tab-contents active-tab" id="languages"> 
+                                    <ul>
+                                         <li>Go</li>
+                                          <li>JavaScript</li> 
+                                          <li>SQL</li> 
+                                          <li>HTML</li>
+                                           <li>CSS</li> 
+                                        </ul> 
+                                    </div> 
+                                    <!-- Frameworks --> 
+                                     <div class="tab-contents" id="frameworks">
+                                         <ul>
+                                             <li>Node.js</li> 
+                                             <li>Express</li>
+                                              <li>REST API Development</li>
+                                               <li>Go net/http</li> 
+                                            </ul> 
+                                        </div>
+                                         <!-- Tools -->
+                                           <div class="tab-contents" id="tools">
+                                             <ul> 
+                                                <li>Git &amp; GitHub</li>
+                                                 <li>Linux</li> 
+                                                 <li>VS Code</li>
+                                                  <li>npm</li> 
+                                                  <li>MySQL</li>
+                                                 </ul>
+                                                 </div> 
+                                                </div> 
+                                            </div>
+                                         </div>
+                                         </div> 
+                                        </section>
             <!-------services------------------>
             <div id="services">
                 <div class="container">
@@ -157,10 +170,6 @@
                     }, 3000); // 3000 milliseconds = 3 seconds
                 });
                 </script>
-                
-            
-            
-                    </div>
                 </div>
             </div>
             <script>
@@ -180,5 +189,6 @@
 
 
             </script>
+            </main>
         </body>
 </html>
