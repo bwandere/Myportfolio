@@ -37,7 +37,7 @@ built with Go, JavaScript, HTML, and CSS.
 
 ## Live Demo
 
-[View Portfolio]https://belle011.github.io/Myportfolio/
+[View Portfolio]https://bwandere.github.io/Myportfolio/
 
 ## Author
 
